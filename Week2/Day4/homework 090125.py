@@ -4,6 +4,9 @@ def option_1(): #the program snippet for option 1
         print("The number is positive")
     return
 
+def option_2(): #the program snippet for option 2
+    return
+
 
 while True: #infinite loop for menu choice
     import os #imports the OS commands
