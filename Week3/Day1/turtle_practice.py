@@ -162,7 +162,7 @@ t.speed(0)  # Fastest drawing speed
 t.width(2)  # Line thickness
 t.hideturtle()  # Hide the turtle for faster drawing
 
-# Predefined color palette (a harmonious, calm palette of warm tones)
+# Original color palette with added purple and pink shades
 color_palette = [
     "#D2691E",  # Chocolate (warm brown)
     "#FF4500",  # OrangeRed
@@ -171,6 +171,10 @@ color_palette = [
     "#FFD700",  # Gold
     "#FFF8DC",  # Cornsilk (light cream)
     "#F0E68C",  # Khaki (light yellow-green)
+    "#8A2BE2",  # BlueViolet
+    "#9932CC",  # DarkOrchid
+    "#D8BFD8",  # Thistle (light lavender)
+    "#FF69B4",  # HotPink
 ]
 
 # Function to draw a single polygon with a specific number of sides
@@ -196,11 +200,6 @@ def draw_radial_design(sides, size, count, step, rotations, colors):
         draw_centered_polygons(sides, size, count, step, colors)
         t.right(360 / rotations)  # Rotate by a fraction of the full circle for symmetry
 
-# Move to starting position (center of screen)
-t.penup()
-t.setposition(0, 0)  # Starting at the center
-t.pendown()
-
 # Adjust the maximum size to ensure the design fits within the screen
 max_size = 120  # Maximum size of the polygons (this ensures the pattern fits within the screen)
 step = 8  # Increment for each polygon's size
@@ -208,6 +207,17 @@ initial_size = 30  # Start with a smaller size to avoid clipping
 
 # Calculate the number of concentric polygons based on size and screen constraints
 count = (max_size - initial_size) // step
+
+# Calculate the total size of the design
+total_size = initial_size + (count - 1) * step  # The total size from the center to the outermost polygon
+
+# Calculate the total height (total size from the top to the bottom of the design)
+total_height = total_size  # The height is essentially the same as the width for this design
+
+# Move the turtle to the center of the screen before starting (both horizontally and vertically)
+t.penup()
+t.setposition(-total_size / 2, total_height / 2 + 100)  # Move up by 100 points
+t.pendown()
 
 # Draw the radial design
 draw_radial_design(sides=6, size=initial_size, count=count, step=step, rotations=12, colors=color_palette)  # Hexagons, 12 rotations (complete circle)
