@@ -162,15 +162,15 @@ t.speed(0)  # Fastest drawing speed
 t.width(2)  # Line thickness
 t.hideturtle()  # Hide the turtle for faster drawing
 
-# Predefined color gradient palette (cool tones: blue to green)
+# Predefined color palette (a harmonious, calm palette of warm tones)
 color_palette = [
-    "#1F77B4",  # Blue
-    "#2CA02C",  # Green
-    "#FF7F0E",  # Orange
-    "#D62728",  # Red
-    "#9467BD",  # Purple
-    "#8C564B",  # Brown
-    "#E377C2",  # Pink
+    "#D2691E",  # Chocolate (warm brown)
+    "#FF4500",  # OrangeRed
+    "#FF6347",  # Tomato (light red)
+    "#FF7F50",  # Coral
+    "#FFD700",  # Gold
+    "#FFF8DC",  # Cornsilk (light cream)
+    "#F0E68C",  # Khaki (light yellow-green)
 ]
 
 # Function to draw a single polygon with a specific number of sides
@@ -201,13 +201,12 @@ t.penup()
 t.setposition(0, 0)  # Starting at the center
 t.pendown()
 
-# Draw the geometric pattern (centered design with concentric polygons)
-# Adjust the size limit to fit the screen
-max_size = 150  # Maximum size of the polygons to prevent them from sticking out
-step = 10  # Increment for each polygon's size
-initial_size = 50  # Start with a smaller size
+# Adjust the maximum size to ensure the design fits within the screen
+max_size = 120  # Maximum size of the polygons (this ensures the pattern fits within the screen)
+step = 8  # Increment for each polygon's size
+initial_size = 30  # Start with a smaller size to avoid clipping
 
-# Calculate the number of concentric polygons based on size
+# Calculate the number of concentric polygons based on size and screen constraints
 count = (max_size - initial_size) // step
 
 # Draw the radial design
