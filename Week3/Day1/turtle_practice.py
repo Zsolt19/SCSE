@@ -164,17 +164,13 @@ t.hideturtle()  # Hide the turtle for faster drawing
 
 # Original color palette with added purple and pink shades
 color_palette = [
-    "#D2691E",  # Chocolate (warm brown)
-    "#FF4500",  # OrangeRed
-    "#FF6347",  # Tomato (light red)
-    "#FF7F50",  # Coral
-    "#FFD700",  # Gold
-    "#FFF8DC",  # Cornsilk (light cream)
-    "#F0E68C",  # Khaki (light yellow-green)
-    "#8A2BE2",  # BlueViolet
-    "#9932CC",  # DarkOrchid
-    "#D8BFD8",  # Thistle (light lavender)
-    "#FF69B4",  # HotPink
+    "#4C6D8C",  # Cool blue
+    "#597D8C",  # Blue-grey
+    "#6A7B8C",  # Slate blue
+    "#3F4F6C",  # Deep blue
+    "#D1D7DC",  # Light grey (off-white)
+    "#5E6B7F",  # Dusty blue
+    "#A0B0B9",  # Soft light blue
 ]
 
 # Function to draw a single polygon with a specific number of sides
