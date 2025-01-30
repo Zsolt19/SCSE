@@ -1,0 +1,54 @@
+.div-1{
+    background-color: blue ;
+    height: 50px;
+    width: 50px;
+}
+.div-2{
+    background-color: red ;
+    height: 100px;
+    width: 100px;
+    border: 10px solid green;
+    padding: 50px;
+}
+.div-3{
+    background-color: yellow ;
+    height: 200px;
+    width: 200px;
+}
+h1{
+    color: blue;
+    /*font-size: 12px;*/
+}
+/* selector{
+    property: value;
+    property: value;
+} */
+ p{
+    color: red;
+   }
+.para{
+    color: green;
+    /*font-size: 12px;*/
+}
+#para{
+    color: yellow;
+    font-size: 12px;
+}
+h1, h2, p{
+    background-color: pink;
+}
+.larger{
+    font-size: 150px;
+}
+.colored_text{
+    color: blue;
+}
+#special_blue{
+    color: aqua;
+}
+.new-font {
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }

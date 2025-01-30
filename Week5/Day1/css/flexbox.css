@@ -1,0 +1,49 @@
+.div-1{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+.div-2{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+.div-3{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+.box{
+    border:2px solid black;
+    width:800px;
+    height:800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.new-font {
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size:16px;
+    cursor: pointer;
+    animation: colour-change 1s infinite;
+    transition: all 0.5s;
+}
