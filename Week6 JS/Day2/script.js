@@ -36,9 +36,20 @@
 //     }
 // }
 
-var heading=document.firstElementChild.lastElementChild.firstElementChild;
-heading.innerHTML="Hello World";
-heading.style.color="red";
-heading.style.backgroundColor="blue";
+// var heading=document.firstElementChild.lastElementChild.firstElementChild;
+// heading.innerHTML="Hello World";
+// heading.style.color="red";
+// heading.style.backgroundColor="blue";
 
-document.body.style.backgroundColor="red";
+// document.body.style.backgroundColor="red";
+
+var btn = document.getElementById("testBtn");
+btn.addEventListener("click", function(){
+    let answer=prompt("Enter your nameo");
+    console.log(`The user enterered info: ${answer}`);
+});
+
+var colBtn=document.getElementById("colorBtn");
+colBtn.addEventListener("click", ()=>{
+    colBtn.style.backgroundColor="red";
+});
