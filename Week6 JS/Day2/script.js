@@ -43,13 +43,22 @@
 
 // document.body.style.backgroundColor="red";
 
-var btn = document.getElementById("testBtn");
-btn.addEventListener("click", function(){
-    let answer=prompt("Enter your nameo");
-    console.log(`The user enterered info: ${answer}`);
-});
+// var btn = document.getElementById("testBtn");
+// btn.addEventListener("click", function(){
+//     let answer=prompt("Enter your nameo");
+//     console.log(`The user enterered info: ${answer}`);
+// });
 
-var colBtn=document.getElementById("colorBtn");
-colBtn.addEventListener("click", ()=>{
-    colBtn.style.backgroundColor="red";
+// var colBtn=document.getElementById("colorBtn");
+// colBtn.addEventListener("click", ()=>{
+//     colBtn.style.backgroundColor="red";
+// });
+
+var btn = document.getElementById("btn");
+//var box = document.getElementById("box");
+btn.addEventListener("click", function(){
+    let answer=prompt("Type a colour");
+    console.log(`The user enterered info: ${answer}`);
+//    box.style.backgroundColor=answer;
+    document.getElementById("box").style.backgorundColor=answer;
 });

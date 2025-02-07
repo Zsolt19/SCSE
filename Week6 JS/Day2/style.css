@@ -1,0 +1,87 @@
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background for contrast */
+}
+
+/* Style the box */
+.box {
+    width: 400px;
+    height: 400px;
+    /*background-color: #ffffff; /* White background for the box */
+    border: 2px solid #cccccc; /* Light gray border */
+    border-radius: 0px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Space between content and button */
+    align-items: center;
+    padding: 0px;
+    animation: cycleBackground 20s infinite;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.boxo {
+    width: 100%;
+    height: 100%;
+    /*background-color: #ffffff; /* White background for the box */
+    /*border: 2px solid #cccccc; /* Light gray border */
+    border-radius: 0px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space between content and button */
+    align-items: center;
+    padding: 0px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Style the button */
+.box button {
+    padding: 0px 167px;
+    /* background-color: #007bff; /* Blue background */
+    /* color: #ffffff; /*White text */*/
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 16px;
+}
+@keyframes cycleBackground {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: rgb(255,157,0);
+    }
+    100% {
+        background-color: red;
+    }
+    
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: yellow; }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    animation: scrollText 100s linear infinite;
+    /* padding: 100px; */
+}
+#flex
