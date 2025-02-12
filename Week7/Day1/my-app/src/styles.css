@@ -1,0 +1,60 @@
+/* General styles for the Tic Tac Toe board */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the entire board container */
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each row of the board */
+.board-row {
+    display: flex;
+}
+
+/* Style for each square in the board */
+.square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: #333;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for squares */
+.square:hover {
+    background-color: #d0d0d0;
+}
+
+/* Style for when a square is clicked (e.g., X or O is placed) */
+.square:active {
+    background-color: #c0c0c0;
+}
+
+/* Optional: Style for the status message (e.g., "Next player: X") */
+.status {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
