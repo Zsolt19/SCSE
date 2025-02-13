@@ -1,0 +1,113 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    background-image: url('https://source.unsplash.com/1600x900/?sky,clouds'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Input & Button styling */
+label {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #2d87f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e6bb8;
+}
+
+/* Weather result box */
+#weatherResult {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.weather-result h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.weather-result p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.weather-result strong {
+    font-weight: bold;
+}
+
+/* Different backgrounds for various weather conditions */
+.clear {
+    background-image: url('https://source.unsplash.com/1600x900/?clear,day');
+}
+
+.clouds {
+    background-image: url('https://source.unsplash.com/1600x900/?clouds,sky');
+}
+
+.rain {
+    background-image: url('https://source.unsplash.com/1600x900/?rain,storm');
+}
+
+.snow {
+    background-image: url('https://source.unsplash.com/1600x900/?snow,winter');
+}
+
+.thunderstorm {
+    background-image: url('https://source.unsplash.com/1600x900/?thunderstorm,lightning');
+}

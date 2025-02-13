@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./weather.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+  <label for="cityInput">Enter City:</label>
+  <input type="text" id="cityInput" placeholder="e.g., London">
+  <button onclick="getWeather()">Get Weather</button>
+
+  <div id="weatherResult"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="weather.mjs"></script>
+</body>
+</html>
